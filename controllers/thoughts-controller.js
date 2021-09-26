@@ -53,7 +53,7 @@ const thoughtsController = {
     },
 
     // update thought by id
-    pdateThoughts({params, body}, res) {
+    updateThoughts({params, body}, res) {
         Thoughts.findOneAndUpdate({_id: params.id}, body, {
                 new: true, 
                 runValidators: true
