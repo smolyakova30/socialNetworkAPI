@@ -20,9 +20,9 @@ const thoughtsController = {
         Thoughts.create(body)
         .then(({_id}) => {
             return Users.findOneAndUpdate(
-                { _id: params.userId}, 
-                {$push: {thoughts: _id}}, 
-                {new: true});
+                { _id: params.userId},
+                 {$push: {thoughts: _id}}, 
+                 {new: true});
         })
         .then(dbThoughtsData => {
             if(!dbThoughtsData) {
@@ -33,7 +33,7 @@ const thoughtsController = {
         })
         .catch(err => res.json(err)); 
     },
-
+    
     // get thought by id
     getThoughtsById({params}, res) {
         Thoughts.findOne({ _id: params.id })
