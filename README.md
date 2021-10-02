@@ -11,6 +11,8 @@
 ## Description
 This challenge is to build the API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
+- A walkthrough video => https://youtu.be/Nvtp6-QxHLY
+
 ### User Story
 
 ```
